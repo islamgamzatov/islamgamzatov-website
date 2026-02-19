@@ -1,0 +1,27 @@
+:root { // Пропишем селектор к корневому элементу разметку через псевдокласс root.
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+	--color-accent: #3880ff;
+
+	--zinc-100: #f4f4f5;
+	--zinc-200: #e4e4e7;
+	--zinc-300: #d4d4d8;
+	--zinc-500: #71717a;
+	--zinc-800: #27272a;
+
+	--error: #E50000;
+
+	--border: 2px solid var(--color-black-15);
+
+	--font-family-base: 'Sora', sans-serif; // <-- После запятой указан тип шрифта, который будет использован, если не подгрузится первый.
+
+	--conttainer-width: #{fluid-laptop(
+		$container-desktop-width, 
+		$container-laptop-width
+	)};
+
+	--container-padding-x: 16px;
+
+	--transition-duration: 0.2s;
+	--transition-duration-longer: 0.4s; // <-- Переменная пригодится при реализации компонента аккордеона. Ибо значение в 0.2s для анимации раскрытия будет ощущаться так себе.
+}
