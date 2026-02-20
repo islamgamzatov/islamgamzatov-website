@@ -1,0 +1,69 @@
+.header {
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	padding-block: fluid(24, 16);
+	animation-name: scrolling-header;
+	animation-fill-mode: both;
+	animation-timeline: scroll();
+	animation-range: 0px 100px;
+
+	@keyframes scrolling-header {
+		to {
+			box-shadow: -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px #000;
+			background-color: var(--color-white);
+			border-color: var(--zinc-500);
+			padding-block: 10px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 16px;
+	}
+
+	&__menu {
+		@include tablet-above {
+			padding-block: fluid-to-laptop(20, 16);
+		}
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			column-gap: fluid-to-laptop(32, 16);
+
+			@include tablet {
+				flex-direction: column;
+				row-gap: 16px;
+				margin-block: auto;
+			}
+		}
+
+		&-link {
+			position: relative;
+			font-weight: 600;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: var(--color-accent);
+				transition: transform 0.25s ease-out;
+			}
+
+			@include hover {
+				&::after {
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+}

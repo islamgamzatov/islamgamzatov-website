@@ -1,0 +1,8 @@
+.logo {
+  width: fluid(60, 35);
+  // color: black;
+
+  @include hover {
+    color: var(--color-accent);
+  }
+}
