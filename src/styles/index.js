@@ -1,11 +1,10 @@
-import '@a1rth/css-normalize/index.css' // Подключение файла нормализации стилей.
 import './fonts.scss' // Подключение файла шрифтов.
 import './variables.scss' // Подключение файла с переменными.
 import './utils.scss' // Подключение файла с утилитарными классами.
 import './globals.scss' // Подключаем файл с глобальными стилями.
+import './normalize.scss'
 import './blocks/header.scss'
 import './blocks/logo.scss'
-import './blocks/BurgerButton.scss'
-import './blocks/Button.scss'
-import './blocks/Icon.scss'
-import './blocks/About.scss'
+import './blocks/button.scss'
+import './blocks/icon.scss'
+import './blocks/burgerButton.scss'

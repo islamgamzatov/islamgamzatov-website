@@ -2,12 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Islam Gamzatov</title>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>islamgamzatov-website</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="header" data-js-overlay-menu>
+      <div class="header__inner container">
+        <a class="header__logo logo" href="/" title="Home" aria-label="Home">
+          <svg fill="currentColor" width="60" height="60" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M215 585 c-51 -18 -110 -81 -124 -131 -19 -69 -13 -108 29 -188 36 -67 40 -83 40 -145 l0 -69 68 -7 c37 -3 93 -8 125 -11 l57 -6 0 30 c0 28 2 29 40 29 53 0 68 15 76 75 7 49 11 56 46 81 17 11 16 15 -12 57 -22 32 -30 57 -30 88 0 152 -160 252 -315 197z m101 -185 c-16 -71 -24 -90 -37 -90 -17 0 -17 4 -4 48 7 26 19 66 25 90 6 23 17 42 24 42 10 0 8 -20 -8 -90z m-76 41 c0 -5 -10 -16 -22 -25 l-23 -16 23 -16 c12 -9 22 -23 22 -30 0 -10 -11 -8 -45 8 -54 26 -57 48 -12 71 36 18 57 21 57 8z m175 -8 c47 -23 44 -44 -10 -71 -34 -16 -45 -18 -45 -8 0 7 10 21 23 30 l22 16 -22 16 c-24 17 -30 34 -13 34 5 0 25 -8 45 -17z"></path>
+            </g>
+          </svg>
+        </a>
+        <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#about" class="header__menu-link">
+                  About Me
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#skills" class="header__menu-link">
+                  Skills
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#projects" class="header__menu-link">
+                  Projects
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#experience" class="header__menu-link">
+                  Experience
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#contacts" class="header__menu-link">
+                  Contact me
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__download-button button" download href="./src/assets/resume.pdf">
+            <span class="button__label">Resume</span>
+            <span class="button__icon icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </dialog>
+        <button class="header__burger-button visible-tablet burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button>
+            <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+              <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+              <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+              <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+            </svg>
+        </button>
+      </div>
+    </header>
+    <p class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident qui maxime fugit earum illo iure voluptas aliquam incidunt quis mollitia reiciendis totam dicta, debitis eos recusandae nobis architecto laborum nostrum, alias repellat blanditiis asperiores corporis! Magni harum, quia corrupti nam molestias quo vero temporibus ab mollitia eaque eius iusto beatae natus non quod pariatur nostrum eum officiis, modi, assumenda voluptas culpa soluta quidem autem! Doloribus culpa amet distinctio impedit est recusandae ducimus autem quasi. Rem blanditiis deserunt incidunt quam explicabo nam id? Nobis quaerat aliquam molestias enim voluptatibus a, itaque explicabo corporis aperiam inventore accusamus exercitationem officiis perspiciatis quidem natus ipsam, illo tempora architecto quae consequuntur est officia dicta? Voluptatibus voluptas sunt numquam distinctio officia ullam necessitatibus iusto eos, blanditiis, dignissimos doloribus nisi id impedit saepe odit deserunt vel! Omnis nobis soluta ad illum explicabo velit doloribus dolor accusamus itaque doloremque, adipisci minus impedit corporis quod provident perferendis fuga sint labore laborum magnam repudiandae nisi mollitia quam sapiente. Nesciunt iusto fugit sequi fuga soluta repudiandae odit, tempore, tenetur neque odio ullam repellat atque. Eveniet quasi aliquid aut debitis quam nihil doloremque laudantium ut facilis corrupti nobis, commodi sunt esse et veniam voluptatibus blanditiis quae repellendus nisi totam? Rem eius non quaerat porro possimus repellendus, exercitationem quo error quisquam, quidem nihil ducimus asperiores eveniet deleniti voluptatum ut consectetur omnis, tenetur dolor ipsum facere? Harum reiciendis inventore id est quisquam nesciunt quidem architecto. Ipsa minus perferendis impedit exercitationem! Quibusdam consectetur animi id minus possimus corporis architecto porro modi aspernatur, sequi vero a commodi labore dolores sint! Quaerat repudiandae id saepe consequuntur totam minus, dolor, quidem deserunt ea quis facilis. Corporis, autem officia? Nulla inventore possimus sint a nihil enim asperiores quaerat minus facere? Laborum iste animi ipsum illum, itaque quasi maxime eveniet libero repellendus eaque! Ipsum harum delectus perspiciatis veniam, provident facilis optio cupiditate nam animi aliquam molestias ipsam, et asperiores consequuntur maxime repellendus possimus, eos quaerat rerum totam qui repellat voluptatibus laboriosam! Eos, sed velit fugit ducimus cumque error perspiciatis corrupti, inventore obcaecati minima magni aperiam alias distinctio asperiores excepturi porro veritatis sit consequuntur iusto aliquam. Sed dicta ipsa eum fuga voluptas. Recusandae enim rerum dolorum id inventore similique necessitatibus dolores. Iste, cumque repellat quia atque reprehenderit incidunt, ea pariatur neque fugiat molestiae exercitationem consectetur quas? Debitis delectus quaerat nulla dolor nemo dolorem qui, officia, eius quisquam voluptas facere ducimus expedita. Pariatur quibusdam officiis dignissimos aliquid libero nemo omnis provident, dolore ut obcaecati laudantium eius itaque eveniet sint quae facere vitae exercitationem doloribus tempora odio, aspernatur in fugit. Libero rerum non, eveniet tenetur iusto, temporibus blanditiis explicabo esse et nobis rem earum architecto commodi aliquid sequi animi, dolor dolores atque pariatur autem minus similique neque? Tenetur voluptate amet recusandae vitae, maiores accusamus velit excepturi saepe quibusdam incidunt aperiam neque molestiae culpa ipsam, odit, deleniti doloribus? Praesentium eaque unde ipsa facilis. Totam eius alias, molestias laborum, nisi iure illo pariatur tenetur assumenda at voluptas! Maxime labore recusandae doloremque harum excepturi minima omnis cumque eligendi, hic adipisci dolorum quod ea quia, iusto, blanditiis quam eius rerum vero? Animi ratione minima eos tempora? Temporibus pariatur non eum, ullam modi ipsum asperiores porro voluptates atque, unde aperiam, praesentium hic rerum. Minima officia dignissimos labore sit incidunt omnis voluptates excepturi dolores pariatur accusantium nostrum in possimus, distinctio explicabo delectus atque expedita laboriosam id mollitia nulla. Porro, animi error minima dignissimos saepe et cumque deserunt quidem voluptatum tenetur, excepturi esse mollitia quae, soluta nisi libero possimus alias laborum! Error quam iste quod, laboriosam excepturi quos veniam delectus, iusto exercitationem ullam labore non praesentium atque expedita? Eaque id voluptas similique cumque molestias, adipisci sit hic, mollitia nemo, inventore alias! Iure, quis enim! Praesentium cumque ex omnis sed quas ab dolorem aliquam necessitatibus pariatur. Et, praesentium facilis ab voluptates, in exercitationem voluptatum eligendi vitae tempora alias commodi possimus laborum expedita. Itaque id aut asperiores porro! Enim dolorem perferendis officiis. Nihil voluptatum omnis deleniti dolores consequuntur magnam dignissimos facilis illo adipisci, illum quae dolor esse, numquam qui explicabo. Alias, maxime sit minus, odio asperiores magnam esse itaque nobis incidunt, mollitia beatae aut odit modi possimus quibusdam sed accusamus et soluta! Blanditiis fuga veritatis modi sit corporis eius provident. Atque non error quod nostrum voluptas beatae delectus amet deleniti a ipsa.</p>
   </body>
 </html>

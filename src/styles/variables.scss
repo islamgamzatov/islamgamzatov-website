@@ -11,16 +11,16 @@
 
 	--error: #E50000;
 
-	--border: 2px solid var(--color-black-15);
+	--border-r: rem(2) solid var(--color-black);
 
 	--font-family-base: 'Sora', sans-serif; // <-- После запятой указан тип шрифта, который будет использован, если не подгрузится первый.
 
-	--container-width: #{fluid-laptop(
-		$container-desktop-width, 
-		$container-laptop-width
-	)};
+	--container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
 
-	--container-padding-x: 1.6rem;
+  @include laptop {
+    --container-width: #{rem(1280)};
+  }
 
 	--transition-duration: 0.2s;
 	--transition-duration-longer: 0.4s; // <-- Переменная пригодится при реализации компонента аккордеона. Ибо значение в 0.2s для анимации раскрытия будет ощущаться так себе.
