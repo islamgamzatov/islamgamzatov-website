@@ -7,6 +7,13 @@
 	border: rem(2) solid var(--color-black);
 	border-radius: rem(4);
 
+	@include hover {
+		border-color: var(--color-accent);
+		.burger-button__line {
+			stroke: var(--color-accent);
+		}
+	}
+
 	&.is-active {
 		.burger-button__line {
 			stroke-dasharray: 90 207;

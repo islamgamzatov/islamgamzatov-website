@@ -24,7 +24,11 @@
 	}
 
 	&:has(.button__icon:only-child) {
-		@include square(fluid-to-laptop(56, 44));
+		@include square(rem(58));
+
+		@include mobile {
+			@include square(rem(48));
+		}
 		
 		padding: 0; // Когда внутри кнопки ТОЛЬКО иконка (без текста), отступы не нужны.
 	}

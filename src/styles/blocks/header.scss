@@ -22,15 +22,13 @@
 		display: flex;
 		align-items: center;
 		column-gap: rem(16);
-
-		@include tablet-above {
-			justify-content: space-between;
-		}
+		justify-content: space-between;
 	}
 
 	&__logo {
 		@include tablet {
 			margin-right: auto;
+			// justify-content: space-between;
 		}
 	}
 
