@@ -11,6 +11,7 @@
 		border-radius: 4px;
 
 		@include hover {
+			transition-duration: var(--transition-duration);
 			background-color: var(--color-black);
 			
 			svg {

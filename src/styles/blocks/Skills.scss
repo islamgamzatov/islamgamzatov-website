@@ -1,0 +1,119 @@
+.skills {
+	padding-block: var(--section-padding-y);
+
+	&__inner {
+		display: grid;
+		row-gap: rem(20);
+	}
+
+	&__title {
+		padding-block: rem(20);
+		font-weight: 400;
+		text-align: center;
+
+		&--accent {
+			font-weight: 800;
+		}
+	}
+
+	&__body {
+		padding-block: rem(40);
+
+		@include mobile {
+			padding-block: rem(10);
+		}
+	}
+
+	&__grid {
+		display: grid;
+		justify-content: center;
+
+		&--5-cols {
+  		grid-template-columns: repeat(5, auto);
+  		gap: fluid(40, 20);
+			
+			@include tablet {
+				grid-template-columns: repeat(3, auto);
+			}
+
+			@include mobile-s {
+				grid-template-columns: repeat(2, auto);
+			}
+
+		}
+	}
+
+	&__cell {
+		--cell-size: #{fluid(186, 160)};
+
+		@include square(var(--cell-size));
+
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		row-gap: rem(16);
+		padding: rem(37) rem(24);
+		border: rem(2) solid var(--color-black);
+		border-radius: rem(4);
+
+		@include hover {
+			transition-duration: var(--transition-duration);
+			background-color: var(--color-black);
+			
+			.skills__cell-title {
+				color: var(--color-white);
+			}
+			
+			svg {
+				color: white;
+			}
+
+			.skills__cell-icon-extra {
+				path:last-child {
+					fill: var(--color-black); // буквы цветные
+				}
+			}
+
+			.skills__cell-icon-сsharp {
+				path:last-child {
+					fill: var(--color-black); // буквы цветные
+				}
+
+				path:nth-child(5) {
+					fill: var(--color-black); // обычное состояние
+				}
+			}
+		}
+
+		@include mobile {
+			padding-block: rem(24);
+		}
+
+		&-title {
+			text-align: center;
+		}
+
+		&-icon {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+
+			&-extra {
+				path:last-child {
+					fill: var(--color-white); // буквы цветные
+				}
+			}
+
+			&-сsharp {
+				path:last-child {
+					fill: var(--color-white); // буквы цветные
+				}
+
+				path:nth-child(5) {
+					fill: var(--color-white); // обычное состояние
+				}
+			}
+		}
+	}
+}
