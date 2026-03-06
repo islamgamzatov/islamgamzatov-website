@@ -1,0 +1,82 @@
+.projects-card {
+	padding: rem(20) rem(32);
+	border-radius: rem(20);
+	@include mobile-above {
+		padding-block: rem(60);
+	}
+
+	display: flex;
+	align-items: center;
+
+	@include mobile-above {
+		column-gap: rem(104);
+	}
+
+	@include tablet {
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: rem(28);
+	}
+
+	&__image {
+		width: fluid(530, 343);
+		border-radius: rem(18);
+		max-height: rem(398);
+		border: 1px solid var(--color-white);
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(28);
+
+		@include tablet {
+			row-gap: rem(14);
+		}
+	}
+
+	&__title {
+		color: var(--color-white);
+	} 
+
+	&__title-name {
+		color: var(--color-white);
+  	display: inline;
+  	white-space: normal;
+		column-gap: rem(3);
+
+		.icon--white-arrow {
+			display: inline-block;
+			vertical-align:super;
+			white-space: nowrap;
+		}
+
+		@include hover {
+			color: var(--color-accent);
+		}
+	}
+
+	&__description {
+		color: var(--zinc-500);
+	}
+
+	&__soc1als {
+		.soc1als__link {
+			background-color: var(--color-black);
+			border-color: var(--color-white);
+
+			svg {
+				color: white;
+			}
+
+			@include hover {
+				transition-duration: var(--transition-duration);
+				background-color: var(--color-white);
+				
+				svg {
+					color: var(--color-black);
+				}
+			}
+		}
+	}
+}

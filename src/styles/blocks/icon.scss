@@ -8,4 +8,9 @@
 	&--skills {
 		--iconSize: #{rem(56)};
 	}
+
+  &--white-arrow {
+		color: var(--color-accent);
+		--iconSize: #{fluid-to-laptop(20, 14	)};
+  }
 }

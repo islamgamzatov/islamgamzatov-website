@@ -30,7 +30,7 @@
 
 		&--5-cols {
   		grid-template-columns: repeat(5, auto);
-  		gap: fluid(40, 20);
+  		gap: fluid(30, 20);
 			
 			@include tablet {
 				grid-template-columns: repeat(3, auto);
