@@ -6,6 +6,10 @@
 	border-radius: rem(10);
 	row-gap: rem(20);
 
+	@include hover {
+		background-color: var(--color-accent);
+	}
+
 	@include mobile {
 		row-gap: rem(28);
 	}
@@ -17,7 +21,7 @@
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		column-gap: rem(30);
+		column-gap: rem(20);
 	}
 
 	&__title {
@@ -35,6 +39,7 @@
 
 	&__image {
 		@include square(rem(32));
+		border-radius: rem(4);
 	}
 
 	&__description {

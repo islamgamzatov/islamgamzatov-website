@@ -17,7 +17,7 @@
 
 @font-face {
 	font-family: 'Sora';
-	src: url('../assets/fonts/Sora-Regular.woff2') format('woff2');
+	src: url('/src/assests/fonts/Sora-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap; // Нужно для более оптимальной подгрузки шрифтов.
@@ -25,7 +25,7 @@
 
 @font-face {
 	font-family: 'Sora';
-	src: url('../assets/fonts/Sora-SemiBold.woff2') format('woff2');
+	src: url('/src/assests/fonts/Sora-SemiBold.woff2') format('woff2');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
 	font-family: 'Sora';
-	src: url('../assets/fonts/Sora-Bold.woff2') format('woff2');
+	src: url('/src/assests/fonts/Sora-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
 	font-family: 'Sora';
-	src: url('../assets/fonts/Sora-ExtraBold.woff2') format('woff2');
+	src: url('/src/assests/fonts/Sora-ExtraBold.woff2') format('woff2');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
