@@ -1,0 +1,32 @@
+.experience {
+	padding-block: var(--section-padding-y);
+	background-color: var(--color-black);
+
+	&__inner {
+		display: grid;
+		row-gap: rem(20);
+	}
+
+	&__title {
+		text-align: center	;
+		color: var(--color-white);
+		font-weight: 400;
+
+		&--accent {
+			font-weight: 800;
+		}
+	}
+
+	&__list {
+		display: grid;
+		row-gap: rem(32);
+
+		@include mobile-above {
+			padding: rem(40) rem(24);
+		}
+		
+		@include mobile {
+			row-gap: rem(28);
+		}
+	}
+}

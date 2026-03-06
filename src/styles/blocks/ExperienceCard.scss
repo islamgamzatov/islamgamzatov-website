@@ -1,0 +1,43 @@
+.experience-card {
+	display: flex;
+	flex-direction: column;
+	padding: rem(30) rem(24);
+	border: 1px solid var(--zinc-500);
+	border-radius: rem(10);
+	row-gap: rem(20);
+
+	@include mobile {
+		row-gap: rem(28);
+	}
+
+	&__date {
+		color: var(--zinc-300);
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		column-gap: rem(30);
+	}
+
+	&__title {
+		color: var(--color-white);
+  	display: inline;
+  	white-space: normal;
+		column-gap: rem(3);
+
+		.icon--white-arrow {
+			display: inline-block;
+			vertical-align:super;
+			white-space: nowrap;
+		}
+	}
+
+	&__image {
+		@include square(rem(32));
+	}
+
+	&__description {
+		color: var(--zinc-300);
+	}
+}

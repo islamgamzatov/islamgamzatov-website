@@ -1,6 +1,7 @@
 .projects-card {
 	padding: rem(20) rem(32);
 	border-radius: rem(20);
+ 
 	@include mobile-above {
 		padding-block: rem(60);
 	}
