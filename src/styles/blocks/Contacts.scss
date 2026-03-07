@@ -1,0 +1,49 @@
+.contacts {
+	padding-block: var(--section-padding-y);
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include tablet-above {
+			padding-inline: rem(32);
+			column-gap: rem(100);
+		}
+	
+		@include tablet {
+			flex-direction: column-reverse;
+			align-items: start;
+		}
+	}
+
+	&__body {
+		padding-block: rem(20);
+		min-width: rem(508);
+
+		@include tablet {
+			min-width: fluid(500, 300);
+		}
+	}
+
+	&__info {
+		padding-block: rem(20);
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(20);
+
+		.contacts__info-title-accent {
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke: rem(2) var(--color-black);
+
+			@include mobile-s {
+				-webkit-text-stroke-width: rem(1);
+			}
+		}
+
+		&-description {
+		color: var(--zinc-500);
+		font-size: rem(16);
+		}
+	}
+}

@@ -4,7 +4,9 @@
   position: relative;
   overflow-y: hidden;
 
+
   &.is-expanded {
+    padding-bottom: var(--section-padding-y);
     &::before, 
     .expandable-content__button {
       @include hide;

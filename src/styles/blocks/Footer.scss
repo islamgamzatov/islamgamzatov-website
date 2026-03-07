@@ -1,0 +1,17 @@
+.footer {
+  padding-block: fluid(24, 16);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  
+  &__inner {
+    display: flex;
+		justify-content: center;
+    align-items: center;	
+  }
+  
+  &__copyright {
+    font-size: rem(14);
+    color: var(--zinc-500);
+    margin: 0;
+  }
+}

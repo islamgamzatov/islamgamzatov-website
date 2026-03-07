@@ -6,11 +6,15 @@
 	padding: rem(16) rem(20);
 	background-color: var(--color-black);
 	border: none; // Всем кнопкам важно убрать стандартный border.
-	border: rem(4);
+	border-radius: rem(4);
 
 	@include hover {
 		color: var(--color-white);
 		background-color: var(--color-accent);
+	}
+
+	@include mobile {
+		width: fit-content;
 	}
 
 	&:active {
